@@ -1,6 +1,6 @@
 # Dependencies to be imported 
 import streamlit as st
-from langchain.document_loaders import PyPDFDirectoryLoader
+from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.llms import Ollama
 
@@ -57,4 +57,5 @@ If the answer is not present, say you don't know.".
         response = llm(prompt)
         st.write("### Answer")
         st.write(response)
+
 
